@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse or Save Boooks</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        
+        function myFun(Imgs) {
+            var expanding = document.getElementById("expandedImg");
+            var imgtext = document.getElementById("imgtext");
+            expandImg.src = Imgs.src;
+            imgText.innerHTML = Imgs.alt;
+            expandImg.parentElement.style.display = "block";
+
+        }
+        var imgs = document.querySelectorAll('.slider img');
+        var currentImg = 0;
+        var dots = document.querySelectorAll(",dot");
+        var currentImg = 0;
+        const interval = 3000;
+
+
+    </script>
+    <style type="text/css">
+    body{
+        color: #5b4530;
+        background-color: #d4d0c6;
+        /* background-image: url("img/pexels-klaus-44936-167676.jpg"); */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+
+    }
+    .wrapper{
+        width: 72px;
+        margin: 0px auto;
+
+    }
+    .header{
+        margin: 400x 0px 20px 0px;
+
+    }
+    
+   
+    nav {
+        font-size: 14px;
+        font-family: georgia;
+        text-align: center;
+    }
+    div {
+        width: 119px;
+        border: solid 1px;
+        float: left;
+        padding: 10px 0;
+    }
+    .slider img{
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        bottom: auto;
+        left: 0;
+
+
+    }
+    .slider img: :first-child{
+        z-index: 0;
+
+    }
+    .slider img:nth-child(2){
+        z-index: 0;
+    }
+    .navigation-button{
+        text-align: center;
+        position: relative;
+    }
+    .active, .dot: hover{
+        background-color: #717171;
+    }
+    .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    </style>
+</head>
+<body>
+    <h1>Browse or Save your Favourite Books</h1>
+    <!-- <nav>
+        <a href="about.html">About <br></a>
+        <a href="books.html">Books <br></a>
+        <a href="contact.html">Contact <br></a>
+    </nav> -->
+    
+    <div class="navbar-collapse collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="active" ><a id="nav-docs" href="books.html">Document and Books</a></li>
+            <li ><a id="nav-updates" href="about.html">About</a></li>
+            <li ><a id="nav-blogs" href="">Blog</a></li>
+            <li ><a id="nav-learn" href="">Learn</a></li>
+            <li class='search visible-xs visible-sm'><a href="">Search</a></li>
+        </ul>
+        </div>
+        <div class="slider">
+            <img src="img/chuttersnap-_EFvjSgbw1c-unsplash.jpg" alt="">
+            <img src="img/industrial-2423810_1280.jpg" alt="">
+            <img src="img/industry-4898342_1280.jpg" alt="">
+            <img src="img/pexels-aadil-1730341.jpg" alt="">
+            <img src="img/pexels-aadil-1730341.jpg" alt="">
+            <img src="img/pexels-albinberlin-906982.jpg" alt="">
+            <img src="img/pexels-klaus-44936-167676.jpg" alt="">
+            <img src="img/pexels-pixabay-159298.jpg" alt="">
+            <img src="img/pexels-pixabay-236722.jpg" alt="">
+            <img src="img/—Pngtree—3d rendering of a robot_4177927.png" alt="">
+
+        </div>
+        <div class="navigation-button">
+            <span class="dot active" onclick="changeSlide(0)"> </span>
+            <span class="dot" onclick="changeSlide(1)"></span>
+            <span class="dot" onclick=" changeSlide(2)"></span>
+        </div>
+    <p>Recently we have lmited resources, so there is only books related to Computer Science and Engineering. But regardless of this you are free to download your favourite book from Internet Archive and other platforms and save it at this site.</p>
+</body>
+</html>
+
